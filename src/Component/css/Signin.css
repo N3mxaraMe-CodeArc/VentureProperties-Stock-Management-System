@@ -1,0 +1,40 @@
+/* * {
+  background-color: rgb(255, 255, 255);
+} */
+
+.full-sign {
+  width: 519px;
+  height: 656px;
+  background: #ffffff;
+  box-shadow: 20px 20px 250px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.pass-feild {
+  margin-top: 8%;
+}
+
+.input-feild {
+  margin: 40px;
+}
+
+.full-sign {
+  border-radius: 15px;
+}
+
+.logo-img {
+  width: 341px;
+  height: 103px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 89px;
+}
+.input-head {
+  font-family: "IM FELL Great Primer SC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #053743;
+}
