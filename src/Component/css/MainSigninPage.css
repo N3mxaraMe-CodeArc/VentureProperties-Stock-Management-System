@@ -1,0 +1,28 @@
+.full-block {
+  display: flex;
+}
+
+.main-image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.main-logo {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-left: 34%;
+  width: 350px;
+  height: 350px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

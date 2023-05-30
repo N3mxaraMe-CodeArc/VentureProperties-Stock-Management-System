@@ -1,14 +1,16 @@
 import './App.css'
-import Logo from './Component/Logo'
-import SignIn from './Component/SignIn'
+// import Logo from './Component/Logo'
+// import SignIn from './Component/SignIn'
+import Main from './Component/SignInPage';
 
 function App() {
   
 
   return (
     <>
-      <SignIn />
-      <Logo />
+      {/* <SignIn /> */}
+      {/* <Logo /> */}
+      <Main />
     </>
   )
 }
