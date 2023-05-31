@@ -1,10 +1,10 @@
 import Nav from "../assets/2page/logo ong.png";
 import Service from "../assets/2page/service img.png";
-import ProLogo from "../assets/2page/proicon.png"
+import ProLogo from "../assets/2page/proicon.png";
 
 function NavBar() {
   return (
-    <div>
+    <div style={{ display: "flex" }}>
       <div>
         <img src={Nav} alt="" />
       </div>
@@ -14,7 +14,12 @@ function NavBar() {
       </div>
       <div>
         <a href="#">
-          <button><img src={ProLogo} alt="" /></button>
+          <button>
+            <div style={{ display: "flex" }}>
+              <img src={ProLogo} alt="" />
+              <h4>Sandaya</h4>
+            </div>
+          </button>
         </a>
       </div>
     </div>

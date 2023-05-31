@@ -1,7 +1,8 @@
 import './App.css'
 // import Logo from './Component/Logo'
 // import SignIn from './Component/SignIn'
-import Main from './Component/SignInPage';
+// import Main from './Component/SignInPage';
+import NavBar from './Component/SecNav';
 
 function App() {
   
@@ -10,7 +11,8 @@ function App() {
     <>
       {/* <SignIn /> */}
       {/* <Logo /> */}
-      <Main />
+      {/* <Main /> */}
+      <NavBar/>
     </>
   )
 }
