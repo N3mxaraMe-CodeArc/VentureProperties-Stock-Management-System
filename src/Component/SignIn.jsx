@@ -30,9 +30,7 @@ function SignIn() {
         </div>
       </div>
       <div style={{marginTop:'44px'}}>
-        <Button onClick={() =>{
-            alert("Loading...")
-        }}
+        <Button
           size="md"
           height="45px"
           width="120px"

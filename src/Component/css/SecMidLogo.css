@@ -1,0 +1,15 @@
+.sec-mid-title {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  padding-left: 0.7rem;
+  letter-spacing: 0.4rem;
+  padding-top: 0.3rem;
+  color: #01323D;
+}
+
+.mid-logo-service {
+  height: 4rem;
+}
