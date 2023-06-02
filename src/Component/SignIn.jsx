@@ -12,39 +12,45 @@ function SignIn() {
       </div>
 
       <div style={{ margin: "4%" }}>
-        <div style={{marginTop:'34px'}}>
+        <div style={{ marginTop: "34px" }}>
           <div className="input-head">
             <h4>USER NAME</h4>
           </div>
-          <div style={{marginTop:'22px'}}>
-            <Input height={50} variant="outline" placeholder="Enter Your Username" />
+          <div style={{ marginTop: "0.5rem" }}>
+            <Input
+              height="2.1875rem"
+              width="17.5rem"
+              variant="outline"
+              placeholder="Enter Your Username"
+            />
           </div>
         </div>
-        <div style={{marginTop:'44px'}}>
+        <div style={{ marginTop: "1.9rem" }}>
           <div className="input-head">
             <h4>PASSWORD</h4>
           </div>
-          <div style={{marginTop:'22px'}}>
-            <PasswordInput height={50} />
+          <div style={{ marginTop: "0.5rem" }}>
+            <PasswordInput/>
           </div>
         </div>
       </div>
-      <div style={{marginTop:'44px'}}>
+      <div style={{ marginTop: "3.1rem" }}>
         <Button
           size="md"
-          height="45px"
-          width="120px"
+          height="2.5rem"
+          width="4.5rem"
           border="20px"
           borderColor="green.500"
           borderRadius="10px" // Added border radius of 30px
           backgroundColor="#01313C" // Updated background color to a light green
           color="#fff"
+          fontSize="13px"
           _hover={{
             backgroundColor: "#176D50", // Dark green color on hover
           }}
           marginLeft="4%"
           marginBottom="30%"
-          marginTop="12%"
+          marginTop="8%"
         >
           SIGN IN
         </Button>
