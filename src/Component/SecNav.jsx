@@ -4,7 +4,7 @@ function NavBar() {
   return (
     <div style={{ display: "flex" }}>
       <div>
-        <img src={Nav} alt="" />
+        <img style={{width:'12rem',paddingLeft:'1.7rem'}} src={Nav} alt="" />
       </div>
     </div>
   );
