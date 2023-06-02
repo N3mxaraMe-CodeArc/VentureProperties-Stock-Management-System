@@ -4,7 +4,9 @@ import './App.css'
 // import SignIn from './Component/SignIn'
 // import Main from './Component/SignInPage';
 // import NavBar from './Component/SecNav';
-import NavBar from './Component/SecNav';
+// import NavBar from './Component/SecNav';
+// import SecLoginBtn from './Component/SecLoginBtn';
+import Logo from './Component/Logo';
 
 function App() {
   
@@ -16,7 +18,9 @@ function App() {
       {/* <Main /> */}
       {/* <NavBar/> */}
       {/* <SecMidLogo/> */}
-      <NavBar/>
+      {/* <NavBar/> */}
+      {/* <SecLoginBtn/> */}
+      <Logo />
     </>
   )
 }

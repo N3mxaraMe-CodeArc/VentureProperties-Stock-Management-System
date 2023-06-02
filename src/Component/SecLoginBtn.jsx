@@ -6,8 +6,10 @@ function SecLoginBtn() {
         <div>
         <div style={{ display: "flex" }}>
           <Button
-            w={150}
-            h={50}
+            w={125}
+            h={46.5}
+            marginLeft='0.5rem'
+            marginTop='0.4rem'
             colorScheme="teal"
             variant="solid"
             _hover={{
@@ -24,13 +26,13 @@ function SecLoginBtn() {
                   alt=""
                 />
                 <div style={{}}>
-                  <h4 style={{ color: "white", marginRight: "55px" }}>
+                  <h4 style={{ color: "white", marginRight: "2.7rem" }}>
                     Sandaya
                   </h4>
                   <h6
                     style={{
                       color: "white",
-                      marginRight: "55px",
+                      marginRight: "2.7rem",
                       fontSize: "0.58rem",
                       paddingTop: "0.3rem",
                     }}
