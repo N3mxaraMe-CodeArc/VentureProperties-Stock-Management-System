@@ -2,14 +2,33 @@
   display: flex;
   font-weight: 600;
   font-style: normal;
-  
+
   font-size: 1.1rem;
   line-height: 30px;
   letter-spacing: 0.2em;
   color: #009b72;
 }
 
-.btn-sum-lay{
+.btn-sum-lay {
+  display: flex;
+  margin-top: 2.1rem;
+}
+
+.container {
+  margin: 1.75rem;
+  background: rgba(153, 212, 197, 0.37);
+  border-radius: 25px;
+  padding: 2rem;
+  width: 25rem;
+}
+
+.topic-form{
     display: flex;
-    margin-top: 2.1rem;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+    font-weight: 650;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin-right: 1.2rem;
+    letter-spacing: .1rem;
 }
