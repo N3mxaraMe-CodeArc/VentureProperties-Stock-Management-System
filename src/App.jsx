@@ -6,7 +6,8 @@ import './App.css'
 // import NavBar from './Component/SecNav';
 // import NavBar from './Component/SecNav';
 // import SecLoginBtn from './Component/SecLoginBtn';
-import Logo from './Component/Logo';
+// import Logo from './Component/Logo';
+import StockForm from './Component/SecStockForm'
 
 function App() {
   
@@ -20,7 +21,8 @@ function App() {
       {/* <SecMidLogo/> */}
       {/* <NavBar/> */}
       {/* <SecLoginBtn/> */}
-      <Logo />
+      {/* <Logo /> */}
+      <StockForm />
     </>
   )
 }
