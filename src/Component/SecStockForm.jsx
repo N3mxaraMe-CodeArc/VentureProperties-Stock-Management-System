@@ -9,12 +9,10 @@ import { useState } from "react";
 function StockForm() {
   const [Quantity, setQuantity] = useState(0);
   const [Price, setPrice] = useState(0);
+  
 
   const Sum = () => {
-    
-    (setQuantity * setPrice)
-
-    return;
+    setPrice(Price*Quantity)
   };
 
   return (
@@ -26,7 +24,7 @@ function StockForm() {
             src={cart}
             alt=""
           />
-          <h3>ADD ITEMS</h3>
+          <h3 style={{fontSize:'1.4rem'}}>ADD ITEMS</h3>
         </div>
         <div>
           <Option
@@ -65,9 +63,9 @@ function StockForm() {
           />
         </div>
         <div className="btn-sum-lay">
-          <h3 className="Sum-txt">SUM: {Sum()} </h3>
+          <h3 className="Sum-txt">SUM: {Sum} </h3>
 
-          <Button
+          <Button 
             w="6.5rem"
             position="absolute"
             marginBottom=".8rem"
