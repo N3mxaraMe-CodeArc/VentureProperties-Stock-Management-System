@@ -1,0 +1,15 @@
+.Sum-txt {
+  display: flex;
+  font-weight: 600;
+  font-style: normal;
+  
+  font-size: 1.1rem;
+  line-height: 30px;
+  letter-spacing: 0.2em;
+  color: #009b72;
+}
+
+.btn-sum-lay{
+    display: flex;
+    margin-top: 2.1rem;
+}
