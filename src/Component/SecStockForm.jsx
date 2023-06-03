@@ -12,9 +12,9 @@ function StockForm() {
 
   const Sum = () => {
     
-    Price = (setQuantity * setPrice)
+    (setQuantity * setPrice)
 
-    return Price;
+    return;
   };
 
   return (
