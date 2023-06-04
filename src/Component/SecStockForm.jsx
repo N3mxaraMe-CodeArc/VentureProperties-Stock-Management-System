@@ -14,9 +14,9 @@ function StockForm() {
 
   const Sum = (event) =>{
     setPrice(event.target.value);
-    console.log(Price);
+    // console.log(Price);
     setQuantity(event.target.value);
-    console.log(Quantity);
+    // console.log(Quantity);
   }
 
   useEffect(() => {
