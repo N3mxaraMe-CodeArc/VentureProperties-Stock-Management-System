@@ -1,5 +1,7 @@
 import { Text } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
+import PropTypes from 'prop-types';
+
 
 function FormInput({ Heading, Placeholder }) {
   return (
@@ -20,11 +22,16 @@ function FormInput({ Heading, Placeholder }) {
           type="Number"
           placeholder={Placeholder}
           w="18rem"
-          required
+          
         />
       </div>
     </div>
   );
 }
+
+FormInput.propTypes ={
+  Placeholder: PropTypes.string.isRequired,
+  Heading: PropTypes.string.isRequired,
+};
 
 export default FormInput;

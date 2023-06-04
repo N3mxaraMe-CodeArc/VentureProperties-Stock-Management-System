@@ -4,16 +4,23 @@ import Input from "./FormdropDownoption/TextFields";
 import { Button } from "@chakra-ui/react";
 import Right from "../assets/2page/rigth mark.png";
 import "./FormdropDownoption/Form.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function StockForm() {
   const [Quantity, setQuantity] = useState(0);
   const [Price, setPrice] = useState(0);
+  const [Total, setTotal] = useState("")
   
 
-  const Sum = () => {
-    setPrice(Price*Quantity)
-  };
+  const Sum = (event) =>{
+    setPrice(event.target.value);
+    setQuantity(event.target.value);
+  }
+
+  useEffect(() => {
+    const multipliedValue = Quantity * Price;
+    setTotal(multipliedValue);
+  }, [Quantity, Price]);
 
   return (
     <div>
@@ -50,20 +57,20 @@ function StockForm() {
           />
           <Input
             value={Quantity}
-            onChange={(event) => setQuantity(event.target.value)}
+            onChange={Sum}
             Placeholder={"Enter the quantity  "}
             Heading={"QUANTITY : "}
           />
 
           <Input
             value={Price}
-            onChange={(event) => setPrice(event.target.value)}
+            onChange={Sum}
             Placeholder={"Price of a Quantity  "}
             Heading={"ONE OF PER : "}
           />
         </div>
         <div className="btn-sum-lay">
-          <h3 className="Sum-txt">SUM: {Sum} </h3>
+          <h3 className="Sum-txt">SUM: RS.{Total} </h3>
 
           <Button 
             w="6.5rem"
