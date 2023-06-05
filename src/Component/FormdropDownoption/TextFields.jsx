@@ -12,7 +12,7 @@ function FormInput({ Heading, Placeholder }) {
             {Heading}
           </Text>
         </h3>
-        <Input
+        <Input 
           color="green"
           fontWeight={600}
           mb="0.5rem"
