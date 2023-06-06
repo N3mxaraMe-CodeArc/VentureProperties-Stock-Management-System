@@ -14,7 +14,7 @@ function StockForm() {
   const Sum = (e) => {
     setPrice(e.target.value);
     setQuantity(e.target.value);
-  }; 
+  };
 
   useEffect(() => {
     const multipliedValue = Quantity * Price;
