@@ -1,19 +1,36 @@
+import { useState, useEffect } from "react";
+import { Button } from "@chakra-ui/react";
+
 import cart from "../assets/2page/cart.png";
 import Option from "./FormdropDownoption/option";
 import Input from "./FormdropDownoption/TextFields";
-import { Button } from "@chakra-ui/react";
 import Right from "../assets/2page/rigth mark.png";
 import "./FormdropDownoption/Form.css";
-import { useState, useEffect } from "react";
 
 function StockForm() {
   const [Quantity, setQuantity] = useState(1);
   const [Price, setPrice] = useState(1);
   const [Total, setTotal] = useState(1);
+  const [SiteName, setSiteName] = useState("");
+  const [Item, setItem] = useState("");
+  const [SubItem, setSubItem] = useState("");
+  const [showAll, setShowAll] = useState(false);
 
   const Sum = (e) => {
     setPrice(e.target.value);
     setQuantity(e.target.value);
+  };
+
+  const ShowAll = () => {
+    return (
+      <div style={{ display: "flex", margin: "2rem" }}>
+        <h2>{Quantity}</h2>
+        <h2>{Price}</h2>
+        <h2>{SiteName}</h2>
+        <h2>{Item}</h2>
+        <h2>{SubItem}</h2>
+      </div>
+    );
   };
 
   useEffect(() => {
@@ -23,6 +40,7 @@ function StockForm() {
 
   const SubmitHandler = (e) => {
     e.preventDefault();
+    setShowAll(true);
   };
 
   return (
@@ -39,6 +57,9 @@ function StockForm() {
           </div>
           <div>
             <Option
+              onChange={(e) => {
+                setSiteName(e.target.value);
+              }}
               Heading={"SITE NAME : "}
               Placeholder={"Select the site Name"}
               Value1={"Mankulam"}
@@ -46,6 +67,9 @@ function StockForm() {
               Value3={"Madirigiriya"}
             />
             <Option
+              onChange={(e) => {
+                setItem(e.target.value);
+              }}
               Heading={"ITEM : "}
               Placeholder={"Enter your Item type"}
               Value1={"Metal"}
@@ -53,6 +77,9 @@ function StockForm() {
               Value3={"Cement"}
             />
             <Option
+              onChange={(e) => {
+                setSubItem(e.target.value);
+              }}
               Heading={"SUB-CATERGORY : "}
               Placeholder={"Select Your Sub Category"}
               Value1={"Metal"}
@@ -77,6 +104,7 @@ function StockForm() {
             <h3 className="Sum-txt">SUM: RS.{Total} </h3>
 
             <Button
+              onClick={SubmitHandler}
               type="submit"
               w="6.5rem"
               position="absolute"
@@ -86,7 +114,6 @@ function StockForm() {
               colorScheme="teal"
               variant="solid"
             >
-              {" "}
               <img
                 style={{
                   width: "1.7rem",
@@ -94,12 +121,15 @@ function StockForm() {
                 }}
                 src={Right}
                 alt=""
-              />{" "}
+              />
               <div style={{ marginRight: "0.8rem" }}>CONFIRM</div>
             </Button>
           </div>
         </div>
       </form>
+      <div>
+        {showAll && <ShowAll />} 
+      </div>
     </div>
   );
 }
