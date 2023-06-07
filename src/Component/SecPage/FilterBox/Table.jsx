@@ -43,14 +43,16 @@ function SecTable({SiteName,Catergory,SubCatergory,Price,Quantity,Total,Name}) {
   );
 }
 
-SecTable.PropTypes={
-    SiteName: PropTypes.string.isRequired,
-    Category: PropTypes.string.isRequired,
-    SubCatergory: PropTypes.string.isRequired,
-    Quantity: PropTypes.string.isRequired,
-    Price: PropTypes.string.isRequired,
-    Name: PropTypes.string.isRequired,
-    Total: PropTypes.string.isRequired,
-}
+SecTable.propTypes ={
+  SiteName: PropTypes.string.isRequired,
+  Catergory: PropTypes.string.isRequired,
+  SubCatergory: PropTypes.string.isRequired,
+  Price: PropTypes.string.isRequired,
+  Name: PropTypes.string.isRequired,
+  Total: PropTypes.string.isRequired,
+  Date: PropTypes.string.isRequired,
+  Quantity: PropTypes.string.isRequired,
+};
+
 
 export default SecTable;

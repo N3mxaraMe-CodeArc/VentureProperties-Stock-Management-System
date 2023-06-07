@@ -3,7 +3,7 @@ import Table from './Table'
 function TableFinal() {
     return ( 
         <div>
-            <Table/>
+            <Table SiteName="Colombo"/>
         </div>
      );
 }
