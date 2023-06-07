@@ -3,6 +3,7 @@
   padding: 0.5rem;
   background: #d9d9d9;
   border-radius: 20px;
+  align-items: center;
 }
 
 .Single-Heading {
@@ -28,7 +29,7 @@
 
   height: 0.4rem;
   padding-right: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .Single-item {
