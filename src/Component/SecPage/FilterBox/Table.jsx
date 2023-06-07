@@ -17,10 +17,7 @@ function SecTable({
         <table>
           <tr>
             <div className="table-row">
-              <div
-                style={{marginBottom:'10rem'}}
-                className="SiteName"
-              >
+              <div style={{ marginBottom: "10rem" }} className="SiteName">
                 <td
                   style={{ color: "white", paddingTop: "0.7rem" }}
                   className="Single-item singleOne"
