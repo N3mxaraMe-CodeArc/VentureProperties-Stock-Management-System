@@ -7,8 +7,8 @@ import './App.css'
 // import NavBar from './Component/SecNav';
 // import SecLoginBtn from './Component/SecLoginBtn';
 // import Logo from './Component/Logo';
-import StockForm from './Component/SecStockForm'
-// import TableFinal from './Component/SecPage/FilterBox/TableFinal'
+// import StockForm from './Component/SecStockForm'
+import TableFinal from './Component/SecPage/FilterBox/TableFinal'
 
 function App() {
   
@@ -23,8 +23,8 @@ function App() {
       {/* <NavBar/> */}
       {/* <SecLoginBtn/> */}
       {/* <Logo /> */}
-      <StockForm />
-      {/* <TableFinal/> */}
+      {/* <StockForm /> */}
+      <TableFinal/>
     </>
   )
 }
