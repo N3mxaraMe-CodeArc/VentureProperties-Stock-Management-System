@@ -8,7 +8,8 @@ import './App.css'
 // import SecLoginBtn from './Component/SecLoginBtn';
 // import Logo from './Component/Logo';
 // import StockForm from './Component/SecStockForm'
-import TableFinal from './Component/SecPage/FilterBox/TableFinal'
+// import TableFinal from './Component/SecPage/FilterBox/TableFinal'
+import FilterBox from './Component/filterBox/filterBox'
 
 function App() {
   
@@ -24,7 +25,8 @@ function App() {
       {/* <SecLoginBtn/> */}
       {/* <Logo /> */}
       {/* <StockForm /> */}
-      <TableFinal/>
+      {/* <TableFinal/> */}
+      <FilterBox/>
     </>
   )
 }

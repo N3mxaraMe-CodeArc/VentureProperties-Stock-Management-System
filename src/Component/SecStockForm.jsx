@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Button } from "@chakra-ui/react";
-
 import cart from "../assets/2page/cart.png";
 import Option from "./FormdropDownoption/option";
 import Input from "./FormdropDownoption/TextFields";
