@@ -19,21 +19,21 @@ function FilterBox() {
           </div>
           <div>
             <SelectForms
-              selectTopic="Site Name"
-              filterPlaceholder=""
+              selectTopic="SITE NAME"
+              filterPlaceholder="Choose the Site Name"
               Value1=""
               Value2=""
               Value3=""
             />
             <SelectForms
-              selectTopic="Quantity"
+              selectTopic="Catergory"
               filterPlaceholder=""
               Value1=""
               Value2=""
               Value3=""
             />
-            <SelectForms
-              selectTopic="Sub Quantity"
+            <SelectForms 
+              selectTopic="sub Catergory"
               filterPlaceholder=""
               Value1=""
               Value2=""
@@ -43,11 +43,11 @@ function FilterBox() {
           <div>
             <div>
               <div className="select-topic">
-                <p>date</p>
+                <p className="filter-topics">DATE</p>
               </div>
               <div>
                 <div>
-                  <Input
+                  <Input borderRadius="1rem"
                     placeholder="Select Date and Time"
                     size="md"
                     type="datetime-local"
