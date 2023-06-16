@@ -27,14 +27,14 @@ function FilterBox() {
             />
             <SelectForms
               selectTopic="Catergory"
-              filterPlaceholder=""
+              filterPlaceholder="Choose the Catergory"
               Value1=""
               Value2=""
               Value3=""
             />
             <SelectForms 
               selectTopic="sub Catergory"
-              filterPlaceholder=""
+              filterPlaceholder="Choose the Sub Catergory"
               Value1=""
               Value2=""
               Value3=""

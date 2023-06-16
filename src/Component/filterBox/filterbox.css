@@ -50,8 +50,10 @@
 }
 
 .filter-topics{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
     margin-bottom: 0.2rem;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 0.2rem;
 }
