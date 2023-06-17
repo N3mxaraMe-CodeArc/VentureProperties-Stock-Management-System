@@ -98,6 +98,7 @@ function StockForm() {
               Placeholder={"Price of a Quantity  "}
               Heading={"ONE OF PER : "}
             />
+            
           </div>
           <div className="btn-sum-lay">
             <h3 className="Sum-txt">SUM: RS.{Total} </h3>
