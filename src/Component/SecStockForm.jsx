@@ -67,6 +67,7 @@ function StockForm() {
             />
             <Option
               onChange={(e) => {
+                e.preventDefault();
                 setItem(e.target.value);
               }}
               Heading={"ITEM : "}
@@ -77,6 +78,7 @@ function StockForm() {
             />
             <Option
               onChange={(e) => {
+                e.preventDefault();
                 setSubItem(e.target.value);
               }}
               Heading={"SUB-CATERGORY : "}

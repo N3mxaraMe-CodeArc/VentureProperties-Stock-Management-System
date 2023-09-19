@@ -26,8 +26,9 @@ function SelectForms({
           borderRadius="1rem"
           paddingTop="0.2rem"
           placeholder={filterPlaceholder}
+          
         >
-          <option value={Value1}></option>
+          <option value={Value1} disabled></option>
           <option value={Value2}></option>
           <option value={Value3}></option>
         </Select>
